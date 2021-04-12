@@ -1,0 +1,48 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "page": {
+      "type": "integer"
+    },
+    "results": {
+      "type": "array",
+      "items":
+        {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "integer"
+            },
+            "original_language": {
+              "type": "string"
+            },
+            "original_title": {
+              "type": "string"
+            },
+            "title": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "id",
+            "original_language",
+            "original_title",
+            "title"
+          ]
+        }
+    },
+    "total_pages": {
+      "type": "integer"
+    },
+    "total_results": {
+      "type": "integer"
+    }
+  },
+  "required": [
+    "page",
+    "results",
+    "total_pages",
+    "total_results"
+  ]
+}
