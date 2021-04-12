@@ -1,7 +1,7 @@
 Feature: Rating movies endpoint test feature
   This is feature file tests valid and invalid scenarios of movie rating endpoint (method:- POST endpoint:- /movie/{movie_id}/rating)
 
-  Scenario: Rates movie valid api_key and guest session id
+  Scenario: Rates movie with valid api_key and guest session id
     Given user setup baseuri to make a request
     And adds api_key as query parameter
     And adds ContentType to header
