@@ -1,13 +1,13 @@
 package org.themoviedb.constants;
 /**
-* This class holds all the URI, PATHS and API_KEY as constants
+* This class holds the URI, all the PATHS and API_KEY as constants
 *
 * @author  Divya S K
 */
 public class Constants {
 	
 	/*
-	 * Some of these values should go in properties file in real time 
+	 * Some of these values should go in to properties file in real time 
 	 * The properties file will have values according to env like dev, QA, UAT and prod etc
 	 */
 	public static final String BASE_URI = "https://api.themoviedb.org";
