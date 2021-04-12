@@ -38,20 +38,20 @@ public class MovieRatingStepDefinitions extends CustomRequestBuilder {
 
 	}
 
-	@When("^user makes post request to rating movie endpoint$")
+	@When("^user makes post request to movie rating endpoint$")
 	public void postRequestToMovieRatingEndpoint() {
 		Response response = getRequestSpecification().post(MOVIE_RATING_PATH);
 		saveResponse(response);
 		
 	}
 	
-	@When("^user makes post request to rating invalid movie endpoint$")
+	@When("^user makes post request to invalid movie rating endpoint$")
 	public void postRequestToInvalidMovieRatingEndpoint() {
 		Response response = getRequestSpecification().post(MOVIE_RATING_PATH_INVALID);
 		saveResponse(response);
 	}
 	
-	@When("^user makes delete request to rating movie endpoint$")
+	@When("^user makes delete request to movie rating endpoint$")
 	public void deleteRequestToMovieRatingEndpoint() {
 		Response response = getRequestSpecification().delete(MOVIE_RATING_PATH);
 		saveResponse(response);
