@@ -14,13 +14,13 @@ import io.restassured.response.Response;
 public class NowPlayingMovieStepDefinitions extends CustomRequestBuilder{
 
 	@When("^user makes get request to nowPlaying movie endpoint$")
-	public void makeGetRequestToPopularMovieEndpoint() {
+	public void makeGetRequestToNowPlayingMovieEndpoint() {
 	    Response response = getRequestSpecification().get(Constants.NOWPLAYING_MOVIE_PATH);
 	    saveResponse(response);
 	}
 	
 	@When("^user makes get request to invalid nowPlaying movie endpoint$")
-	public void makeGetRequestToInvalidPopularMovieEndpoint() {
+	public void makeGetRequestToInvalidNowPlayingMovieEndpoint() {
 	    Response response = getRequestSpecification().get(Constants.NOWPLAYING_MOVIE_PATH_INVALID);
 	    saveResponse(response);
 	}
