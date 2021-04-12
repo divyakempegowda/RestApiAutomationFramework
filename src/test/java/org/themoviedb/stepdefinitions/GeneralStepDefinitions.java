@@ -1,7 +1,6 @@
 package org.themoviedb.stepdefinitions;
 /**
-* This class hold step definitions in general we use across the feature files
-* Those which are specific will be in its own endpoint file
+* This class holds step definitions in general which we use across all the feature files
 *
 * @author  Divya S K
 */
@@ -46,8 +45,7 @@ public class GeneralStepDefinitions extends CustomRequestBuilder{
 	}
 	
 	/*
-	 * This is the method which compares body with expected schema where we verify whether field has correct datatype
-	 * Everytime when new feature file adds this step then they must add a case here to support new schema if it not present
+	 * This is the method which compares response body with expected schema to validate existence of mandatory fields and their datatypes
 	 */
 	@Then("^user validates '(.*?)' responsebody with expected data$")
 	public void validateResponsebodyWithExpectedSchema(String endpointType) throws Exception {
@@ -77,7 +75,7 @@ public class GeneralStepDefinitions extends CustomRequestBuilder{
 	    while(it.hasNext()) {
 	    	Map.Entry<String, Object> en = it.next();
 	    	if(en.getKey().equalsIgnoreCase("success")) {
-	    		//TODO Dont know how to pass boolean from datatable. Never did that before hence make small trick to work
+	    		//TODO Dont know how to pass boolean value from datatable. Never did that before hence make small trick to make it work
 	    		boolean value = en.getValue().equals("false")?Boolean.FALSE : Boolean.TRUE;
 	    		getLastRequestResponse().then().body(en.getKey(), equalTo(value));
 	    	}else {
