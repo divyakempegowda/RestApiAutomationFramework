@@ -13,7 +13,7 @@ This project created to test few endpoint in movie db api
 
 
 ### Test Report
-When we run by maven or test runner, the html report will be generated in the name of cucumber-html-report.html project's target folder
+When we run by maven or test runner, the html report will be generated in the name of cucumber-html-report.html in project's target folder
 
 ## Libraries
 * [RestAssured] library to test REST API.
