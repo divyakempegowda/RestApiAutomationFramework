@@ -1,7 +1,7 @@
 package org.themoviedb.base;
 /**
 * This class is to hold request and response objects
-* This will be used create request spec and holds last response made using request spec
+* This will be used in creating request spec and it holds last response made using request spec
 *
 * @author  Divya S K
 */
@@ -36,8 +36,8 @@ public class CustomRequestBuilder {
 	}
 	
 	/*
-	 * As we are not testing guest session end point hence directly generating guest session for movie rating end point.
-	 * If guestSessionId is already generated then we use the one generated otherwise we generate one 
+	 * As we are not testing guest session end point hence we are directly generating guest session to rate movies.
+	 * If guestSessionId is already generated then we use the one generated otherwise we generate one. 
 	 */
 	public static String getGuestSessionId() {
 		if(guestSessionId == null) {
