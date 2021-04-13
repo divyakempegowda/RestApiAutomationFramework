@@ -1,5 +1,5 @@
 # Rest Assured + Cucumber + TestNG + Maven project
-This project created to test few endpoint in movie db api
+This project is created to test few endpoint in the movie db api
 
 ## Required software
 * Java JDK 11+
